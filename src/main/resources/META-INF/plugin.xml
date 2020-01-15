@@ -12,6 +12,13 @@
     <li>Supports JSR-305 @Nullable, @Nonnull and @ParametersAreNonnullByDefault annotations</li>
     <li>Checks for non-null value for fields annotates as @Nonnull</li>
     </ul>
+    <br />
+    <b>Usage:</b>
+    <ul>
+    <li>Locate the cursor inside a class, open Generate menu (Code -> Generate...) and select Builder and Getters.</li>
+    </ul>
+    <br />
+    <p>If you come across bugs with the plugin or have feature requests, please raise an <a href="https://github.com/andrey4623/effective-inner-builder/issues">issue</a>.</p>
     ]]></description>
 
     <change-notes><![CDATA[
