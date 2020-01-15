@@ -1,0 +1,28 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.15'
+    id 'java'
+}
+
+group 'com.andrey4623.intellij.plugins'
+version '1.0'
+
+sourceCompatibility = javaVersion
+targetCompatibility = javaTargetVersion
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java.srcDir('src/main/java')
+        resources.srcDir('src/main/resources')
+    }
+}
+
+intellij {
+    version = '2019.3'
+    plugins 'java'
+    pluginName = 'Effective Inner Builder'
+    intellij.updateSinceUntilBuild = false
+}

@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>com.andrey4623.intellij.plugins.effectiveinnerbuilder</id>
+    <name>Effective Inner Builder</name>
+    <vendor email="andreyka4623@gmail.com" url="https://github.com/andrey4623">Andrey Kolchanov</vendor>
+
+    <description><![CDATA[
+    <p>Plugin for generation inner builder and getters for a class.</p>
+    <br />
+    <b>Features:</b>
+    <ul>
+    <li>Generates inner builder and getters for a class</li>
+    <li>Supports JSR-305 @Nullable, @Nonnull and @ParametersAreNonnullByDefault annotations</li>
+    <li>Checks for non-null value for fields annotates as @Nonnull</li>
+    </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <p>1.0: This is the initial version of the plugin.</p>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="192.0" />
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action
+                class="com.andrey4623.intellij.plugins.effectiveinnerbuilder.ActionListener"
+                id="generateBuilderAndGetters"
+                text="Builder and Getters..."
+                description="Generate a builder and getters">
+                <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
